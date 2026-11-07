@@ -105,3 +105,14 @@ figcaption{text-align:center;font-size:.85rem;color:var(--muted);margin-top:4px}
 .sticky-cta{position:fixed;bottom:calc(14px + env(safe-area-inset-bottom));left:16px;right:16px;z-index:50;text-align:center;background:var(--deep);color:#fff;text-decoration:none;font-weight:700;font-size:1.05rem;padding:15px;border-radius:var(--radius);box-shadow:0 10px 26px rgba(42,26,30,.35);transition:opacity .25s,transform .25s}
 .sticky-cta.hide{opacity:0;transform:translateY(120%);pointer-events:none}
 @media (min-width:760px){.sticky-cta{left:auto;right:24px;width:260px}}
+
+/* Service details and pre-booking information */
+.accordion-list{display:grid;gap:12px;margin:24px 0}
+.accordion{border:1px solid #dcbec7;border-radius:18px;overflow:hidden;background:#fff9fa}
+.accordion h3{margin:0}.accordion-toggle{width:100%;border:0;background:transparent;color:inherit;font:inherit;font-weight:700;display:flex;justify-content:space-between;align-items:center;text-align:right;padding:20px;gap:16px;cursor:pointer}
+.accordion-toggle[aria-expanded="true"]{background:#f6dfe3}.accordion-toggle[aria-expanded="true"] span{transform:rotate(45deg)}
+.accordion-body{padding:4px 22px 22px;line-height:1.9}.accordion-body ul,.important ul{padding-inline-start:22px}.detail-price{font-size:1.4rem;font-weight:800;margin:14px 0}.accordion-body h4{margin:8px 0}
+.photo-notice{background:#f6dfe3;border-right:4px solid #815264;border-radius:14px;padding:20px;margin:24px 0}.photo-notice h3{margin-top:0}
+.important p,.important li,.choice-group p{line-height:1.9}.choice-group{min-width:0;border:1px solid #dcbec7;border-radius:16px;padding:20px;margin:24px 0}.choice-group legend{font-size:1.1rem;font-weight:700;padding:0 8px}.choice-group label{display:block;line-height:1.8;margin:12px 0}.choice-group input[type="radio"],.choice-group input[type="checkbox"]{accent-color:#815264;width:19px;height:19px;vertical-align:middle;margin-inline-end:8px}
+[hidden]{display:none!important}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #815264;outline-offset:4px} .addon-grid .field{width:100%}.loc .btn{max-width:100%;white-space:normal;text-align:center}
+@media(max-width:480px){.choice-group{padding:16px 12px}.accordion-toggle{padding:18px 16px}.accordion-body{padding:4px 16px 18px}.important h2{font-size:1.7rem}}
